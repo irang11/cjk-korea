@@ -1,0 +1,40 @@
+.support-section {
+    padding: 10px 0px 40px 0px;
+    background-color: #ffffff;
+}
+
+/* 왼쪽: 제목 */
+.support-title {
+    margin-bottom:30px;
+    padding: 0px;
+    color: #222;
+}
+
+
+/* 회색 박스 */
+.support-box {
+    flex: 3 1 700px;
+    background-color: #f2f2f5;
+    padding: 25px 40px 20px 40px;
+    border-radius: 10px;
+}
+
+.support-entry p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.sup-name {
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 4px;
+    color: #1a1a1a;
+}
+
+.sup-affiliation {
+    font-size: 17px;
+    color: #1a1a1a;
+    display: inline-block;
+}

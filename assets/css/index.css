@@ -1,0 +1,166 @@
+/* 히어로 섹션 스타일 */
+.hero {
+    text-align: center;         /* 가운데 정렬 */
+    margin-bottom: 40px;        /* 하단 마진 */
+    padding: 0 20px;            /* 좌우 패딩 */
+}
+
+/* 히어로 이미지 스타일 */
+.hero img {
+    max-width: 100%;            /* 최대 너비 */
+    height: auto;               /* 높이 자동 조정 */
+    display: block;             /* 블록 요소로 표시 */
+    margin: 0 auto;             /* 가운데 정렬 */
+    border-radius: 8px;         /* 모서리 둥글게 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* 그림자 효과 */
+}
+
+/* [CJK-CONFERENCE-INFO] 시작 */
+.conference-info {
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* ✅ 행사 정보 카드만 연한 회색 배경 */
+.event-card {
+    background-color: var(--light-gray);
+    padding: 25px 50px;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.event-dates,
+.event-location {
+    font-size: 23px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.event-card > :last-child {
+    margin-bottom: 0 !important;  /*위아래여백맞춤*/
+}
+
+/* 이미지 + 텍스트 영역 */
+.info-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.info-image {
+    flex: 1 1 450px;
+    text-align: center;
+}
+
+.info-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.info-text {
+    flex: 1 1 300px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #222;
+}
+
+.info-text p {
+    margin-bottom: 20px; /* ✅ 문단 아래 여백 추가 */
+}
+
+/* [CJK-CONFERENCE-INFO] 끝 */
+
+/* Notice, Invited Speakers 레이아웃 */
+
+
+
+/* 2단 레이아웃 */
+.quick-notice-speaker {
+    display: flex;
+    gap: 40px;
+    margin: 60px auto;
+}
+
+/* 왼쪽 열: QuickMenus + Notice */
+.left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* 오른쪽 열: Invited Speakers */
+.right-column {
+    flex: 1;
+}
+
+/* 버튼 가운데 정렬 및 간격 */
+.quick-menus {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+/* 버튼 스타일 */
+.menu-button {
+    background-color: var(--secondary);
+    color: black;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+    box-shadow: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #e07b34;
+}
+
+/* Notice & Invited Speakers 공통 */
+.quick-menus-block h2,
+.notice h2,
+.support h2,
+.invited-speakers h2 {
+    font-size: 24px;
+    margin-bottom: 35px;
+    margin-left: 10px;
+}
+
+.notice-content,
+.speakers-list {
+    background-color: #f0f0f0;
+    padding: 20px 23px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.notice-content p,
+.speakers-list p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.support-image {
+    text-align: center;
+}
+
+.support-image img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.notice-content a {
+    color: #222;
+}

@@ -1,0 +1,48 @@
+.participants-section {
+    padding: 10px 0px 40px 0px;
+    background-color: #ffffff;
+}
+
+/* 왼쪽: 제목 */
+.participants-title {
+    margin-bottom:30px;
+    padding: 0px;
+    color: #222;
+}
+.participants-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    table-layout: fixed;
+}
+.participants-table th,
+.participants-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+.participants-table th {
+    background-color: #f1f1f1;
+}
+
+.participants-table th:nth-child(1),
+.participants-table td:nth-child(1) {
+    width: 10px;  /* No. */
+    text-align: center;
+}
+
+.participants-table th:nth-child(2),
+.participants-table td:nth-child(2) {
+    width: 100px;  /* Name */
+}
+
+.participants-table th:nth-child(3),
+.participants-table td:nth-child(3) {
+    width: 300px;  /* Affiliation */
+}
+
+.participants-table th:nth-child(4),
+.participants-table td:nth-child(4) {
+    width: 10px;   /* Talk */
+    text-align: center;
+}

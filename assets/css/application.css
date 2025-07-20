@@ -1,0 +1,100 @@
+.application-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .application-section {
+            padding: 40px 0;
+        }
+
+        .application-layout {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        /* 폼 영역 확장 (3:2 비율) */
+        .form-notice-container {
+            flex: 2; /* 폼 영역 확장 */
+            min-width: 300px;
+        }
+
+        .application-layout > div:last-child {
+            flex: 4; /* 공지사항 영역 */
+            min-width: 300px;
+        }
+
+        .application-box {
+            background-color: #f2f2f5;
+            padding: 22px 40px 11px 40px;
+            border-radius: 10px;
+            height: 100%;
+        }
+
+        .application-entry p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #222;
+            font-size: 19px;
+        }
+
+        .application-small-title {
+            font-size: 30px;
+            padding: 10px 0 20px;
+            margin: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .required {
+            color: red;
+            margin-left: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            background: #f5f5f8;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+        }
+
+        .radio-group {
+            margin-top: 5px;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .radio-group input {
+            margin-right: 8px;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .submit-button button {
+            padding: 10px 30px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: not-allowed;
+            font-size: 14px;
+        }

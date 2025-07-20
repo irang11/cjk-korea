@@ -1,0 +1,52 @@
+.organizers-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+
+/* 2단 레이아웃 */
+.organizers-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+/* 오른쪽: 회색 박스 */
+.organizers-box {
+    flex: 3 1 700px;
+    background-color: #f2f2f5;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+
+.organizers-box.local-organizers {
+    padding: 25px 40px;
+}
+.country-title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    margin: 10px 0px;
+    color: #1a1a1a;
+}
+
+.organizer-entry p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 9px;
+}
+
+.org-name {
+    font-size: 24px;
+    display: inline-block;
+    color: #1a1a1a;
+}
+
+.org-affiliation {
+    font-size: 17px;
+    color: #1a1a1a;
+    display: inline-block;
+}

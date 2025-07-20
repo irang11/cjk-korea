@@ -1,0 +1,77 @@
+.history-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+}
+
+.section-divider { /* 줄 굵기가 다 다르다 왜지????*/
+    height: 1px;
+    background-color: #000;
+    margin: 40px 0 20px;
+}
+
+/* 2단 레이아웃 */
+.history-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* 왼쪽: 제목 */
+.history-title {
+    flex: 1 1 200px;
+}
+
+.history-title h1 {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-top: 10px;
+}
+
+/* 오른쪽: 회색 박스 */
+.history-box {
+    flex: 3 1 700px;
+    background-color: #f2f2f5;
+    padding: 30px 20px 30px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.history-entry {
+    margin-bottom: 60px;
+}
+
+.history-entry h2 {
+    color: #2a5adf;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.history-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.history-text {
+    flex: 1 1 400px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.history-image {
+    flex: 1 1 300px;
+    max-width: 600px;
+}
+
+.history-content {
+    align-items:center;
+}
+
+.history-image img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+

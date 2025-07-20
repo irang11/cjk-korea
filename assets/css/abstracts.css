@@ -1,0 +1,57 @@
+.abstracts-section {
+    padding: 10px 0px 40px 0px;
+    background-color: #ffffff;
+}
+
+/* 왼쪽: 제목 */
+.abstracts-title {
+    margin-bottom:30px;
+    padding: 0px;
+    color: #222;
+}
+.abstracts-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    table-layout: fixed;
+}
+.abstracts-table th,
+.abstracts-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+.abstracts-table th {
+    background-color: #f1f1f1;
+}
+
+.abstracts-table th:nth-child(1),
+.abstracts-table td:nth-child(1) {
+    width: 10px;  /* No. */
+    text-align: center;
+}
+
+.abstracts-table th:nth-child(2),
+.abstracts-table td:nth-child(2) {
+    width: 100px;  /* Speaker */
+}
+
+.abstracts-table th:nth-child(3),
+.abstracts-table td:nth-child(3) {
+    width: 300px;  /* Title */
+}
+
+.abstracts-table th:nth-child(4),
+.abstracts-table td:nth-child(4) {
+    width: 40px;   /* Abstract */
+    text-align: center;
+}
+
+.abstracts-table a { 
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+}
+.abstracts-table a:hover {
+  color: darkgreen;
+}
