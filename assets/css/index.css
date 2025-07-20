@@ -164,3 +164,37 @@
 .notice-content a {
     color: #222;
 }
+
+/* 모바일 친화적인 스타일 추가 */
+@media (max-width: 768px) {
+    .conference-info {
+        margin: 30px auto;
+    }
+    
+    .info-image {
+        flex: 1 1 100%;
+    }
+    
+    .info-text {
+        flex: 1 1 100%;
+        font-size: 18px;
+    }
+    
+    .quick-menus-block h2,
+    .notice h2,
+    .support h2,
+    .invited-speakers h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .notice-content,
+    .speakers-list {
+        padding: 15px;
+        font-size: 18px;
+    }
+    
+    .support-image img {
+        max-width: 200px;
+    }
+}

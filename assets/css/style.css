@@ -307,3 +307,124 @@ footer {
 .accommodation-box a:not([href*="maps"]):not([href*="edit"]):hover {
     color: darkgreen;
 }
+
+/* 모바일 네비게이션 토글 버튼 */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1100;
+}
+
+/* 반응형 미디어 쿼리 */
+@media (max-width: 992px) {
+    /* 푸터 그리드 조정 */
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* 모바일 네비게이션 */
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+    }
+    
+    .nav-menu li a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        display: none;
+    }
+    
+    .nav-menu li:hover .dropdown-menu {
+        display: block;
+    }
+    
+    /* 푸터 1열로 변경 */
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    /* 콘텐츠 레이아웃 조정 */
+    .quick-notice-speaker {
+        flex-direction: column;
+    }
+    
+    .info-layout {
+        flex-direction: column;
+    }
+    
+    /* 버튼 스타일 조정 */
+    .quick-menus {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .menu-button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* 작은 화면 추가 조정 */
+    .event-card {
+        padding: 15px;
+    }
+    
+    .event-dates,
+    .event-location {
+        font-size: 18px;
+    }
+    
+    .info-text {
+        font-size: 16px;
+    }
+    
+    .notice-content p,
+    .speakers-list p {
+        font-size: 16px;
+    }
+    
+    .hero {
+        padding: 0;
+    }
+    
+    .conference-info,
+    .quick-notice-speaker {
+        margin: 30px auto;
+    }
+}
